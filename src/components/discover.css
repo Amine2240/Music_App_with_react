@@ -1,0 +1,26 @@
+
+.contain::-webkit-scrollbar{
+  display: none;
+  
+}
+
+.undercontain{
+  animation: appear 1s infinite;
+}
+
+@keyframes appear {
+  0%{
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  50%{
+    opacity: 0.5;
+    
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+}
