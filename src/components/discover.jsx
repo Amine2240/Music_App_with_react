@@ -157,7 +157,7 @@ const Discover = () => {
         }}
       >
         <div className="overflow-y-scroll contain">
-          <div className=" relative ml-2">
+          <div className=" relative ml-2 flex place-content-between">
             <input
               type="text"
               placeholder="Search"
@@ -177,6 +177,9 @@ const Discover = () => {
                 foranimation();
               }}
             />
+            <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank" rel="noreferrer">
+            <button className=" text-gray-500  mt-5">Nothing appears?</button>
+            </a>
           </div>
 
           <div className=" flex place-content-between mt-5">
@@ -188,6 +191,7 @@ const Discover = () => {
                 ? `${genresearchvalue}`
                 : ""}
             </h1>
+            
             <select
               name=""
               id=""
