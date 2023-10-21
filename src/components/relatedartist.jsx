@@ -1,28 +1,22 @@
-
 import { Artistinfo } from "./topartists";
 import { useContext } from "react";
 
 const Relatedartist = () => {
-  const data  = useContext(Artistinfo)
+  const newartistoftrouv = useContext(Artistinfo);
 
-  console.log(data);
-  return(
-   <>
-   
-      
-    <div>
-      <div className=" w-16 h-16">
-        <img src={data.picture_xl} alt="" />
-      </div>
+  console.log(newartistoftrouv);
+  return (
+    <>
       <div>
-        <p>related artist </p>
+        <div className=" w-16 h-16">
+          <img src={newartistoftrouv.picture_xl} alt="" />
+        </div>                 
+        <div>
+          <p>related artist </p>
+        </div>
       </div>
-    </div>
-
-   
-     
-  </>
-  )
+    </>
+  );
 };
 
 export default Relatedartist;

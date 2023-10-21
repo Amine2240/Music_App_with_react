@@ -10,6 +10,7 @@ export const Topartists = () => {
   const [newartists, setnewartists] = useState([]);
   const [trouv, settrouv] = useState(0);
 
+
   const fetchdata = () => {
     const url =
       "https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/0/artists";
@@ -50,9 +51,10 @@ export const Topartists = () => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [artists]);
+   const newartistoftrouv = newartists[trouv];
 
   return (
-    <Artistinfo.Provider value={newartists[trouv]}>
+    <Artistinfo.Provider value={newartistoftrouv}>
       <div className="overflow-x-scroll artist ">
         <p className=" capitalize text-white font-bold text-2xl mb-5 mt-3 ml-10">
           top artists
