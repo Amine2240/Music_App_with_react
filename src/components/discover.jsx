@@ -177,8 +177,12 @@ const Discover = () => {
                 foranimation();
               }}
             />
-            <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank" rel="noreferrer">
-            <button className=" text-gray-500  mt-5">Nothing appears?</button>
+            <a
+              href="https://cors-anywhere.herokuapp.com/corsdemo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className=" text-gray-500  mt-5">Nothing appears?</button>
             </a>
           </div>
 
@@ -191,7 +195,7 @@ const Discover = () => {
                 ? `${genresearchvalue}`
                 : ""}
             </h1>
-            
+
             <select
               name=""
               id=""
